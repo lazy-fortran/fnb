@@ -1,6 +1,6 @@
-name = "fortbook"
+name = "fnb"
 version = "0.1.0"
-description = "Jupyter notebook interface for Fortran - interactive computing and visualization"
+description = "Fortran notebook interface - jupytext-style interactive computing with markdown/PDF output"
 author = "krystophny"
 license = "MIT"
 
@@ -14,7 +14,7 @@ auto-tests = true
 auto-examples = false
 
 [[executable]]
-name = "fortbook"
+name = "fnb"
 source-dir = "app"
 main = "main.f90"
 

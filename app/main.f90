@@ -1,4 +1,4 @@
-program fortbook_main
+program fnb_main
     use notebook_types, only: notebook_t
     use notebook_parser, only: parse_notebook
     use notebook_executor, only: execute_notebook
@@ -13,12 +13,12 @@ program fortbook_main
     ! Get command line arguments
     num_args = command_argument_count()
     if (num_args < 1) then
-        print *, "Usage: fortbook <command> [options]"
+        print *, "Usage: fnb <command> [options]"
         print *, ""
         print *, "Commands:"
-        print *, "  run <notebook.ipynb>        Execute notebook"
-        print *, "  render <notebook.ipynb>     Render notebook to HTML"
-        print *, "  convert <notebook.ipynb>    Convert notebook format"
+        print *, "  run <analysis.f>          Execute notebook"
+        print *, "  render <analysis.f>       Render to markdown/PDF"
+        print *, "  convert <analysis.f>      Convert notebook format"
         print *, ""
         print *, "Options:"
         print *, "  -o <file>    Output file"
@@ -154,4 +154,4 @@ contains
         end if
     end function replace_extension
 
-end program fortbook_main
+end program fnb_main
