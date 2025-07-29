@@ -1,0 +1,24 @@
+name = "fortbook"
+version = "0.1.0"
+description = "Jupyter notebook interface for Fortran - interactive computing and visualization"
+author = "krystophny"
+license = "MIT"
+
+[dependencies]
+fortfront = { git = "https://github.com/lazy-fortran/fortfront.git" }
+json-fortran = { git = "https://github.com/jacobwilliams/json-fortran.git", tag = "8.3.0" }
+
+[build]
+auto-executables = true
+auto-tests = true
+auto-examples = false
+
+[[executable]]
+name = "fortbook"
+source-dir = "app"
+main = "main.f90"
+
+[fortran]
+implicit-external = false
+implicit-typing = false
+source-form = "free"
