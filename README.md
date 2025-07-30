@@ -1,4 +1,4 @@
-# fnb
+# fortnb
 
 **Fortran Notebook** - jupytext-style interactive computing with markdown/PDF output.
 
